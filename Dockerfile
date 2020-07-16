@@ -2,7 +2,7 @@
 FROM hub.data.wust.edu.cn:30880/library/tensorflow:1.14.0-gpu-py3
 
 # step2: 将工程下面的机器学习相关的文件（这里是mnist文件夹）复制到容器某个目录中，例如：/home/mnist
-COPY ./mnist /home/fin
+COPY ./fin /home/fin
 
 # step3 设置容器中的工作目录，直接切换到/home/mnist目录下
 WORKDIR /home/fin
