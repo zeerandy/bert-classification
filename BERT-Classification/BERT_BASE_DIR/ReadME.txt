@@ -1,2 +1,0 @@
-这里是google通过超大的训练数据预训练好的一个baseline，我们使用BERT模型的本质是一种迁移学习，在google这个baseline的基础上使用我们的数据进行微调。
-这是英文的baseline。
