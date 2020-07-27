@@ -11,4 +11,4 @@ WORKDIR /home/BERT-Classification
 RUN pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # step5 设置容器启动时的运行命令，这里我们直接运行python程序
-CMD [ "sh", "-c", "echo $HOME" ]
+ENTRYPOINT ["sh", "/home/BERT-Classification/train.sh"]
