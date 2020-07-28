@@ -1,2 +1,4 @@
 tensorflow == 1.14.0   # CPU Version of TensorFlow.
+sklearn
+numpy
 # tensorflow-gpu  >= 1.11.0  # GPU version of TensorFlow.
