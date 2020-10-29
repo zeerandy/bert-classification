@@ -243,7 +243,7 @@ class FinattProcessor(DataProcessor):
             # tokenization is based on vocab file
             text_a = tokenization.convert_to_unicode(line[0])
             text_b = tokenization.convert_to_unicode(line[1])
-            print(line[1])
+            # print(line[1])
             if set_type == "test":
                 label = "0"
             else:
@@ -251,7 +251,7 @@ class FinattProcessor(DataProcessor):
             labels.append(label)
             labels_test.append(label)
             examples.append(
-                InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
+                InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
 
         return examples, labels
 
