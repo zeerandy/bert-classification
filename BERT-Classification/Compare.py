@@ -1,33 +1,37 @@
-import numpy as np
 import pandas as pd
-import re
+from sklearn import metrics
+
+path_predict = "predict_SVC.csv"
+path_dev = "dev.tsv"
 
 
-    
-# 导入原数据 将csv文件读入并转化为数据框形式
-df1 = pd.read_csv('./data/test.tsv', sep='\t',encoding='UTF-8', dtype={
-    "title": str,"content": str, "lab": str, "label": str})
-df2 = pd.read_csv('./output/predict.csv', encoding='UTF-8', dtype={
-    "content": str, "number": str, "label": str})
+def data_compare():
 
-n = df1.shape[0] #共有n条数据
-print(n)
+    dev = pd.read_csv(path_dev, sep='\t',encoding='utf-16')
+    predict = pd.read_csv(path_predict, encoding='utf-16')
+    n=dev.shape[0]
 
-t1 = df1['label']
-t2 = df2['label']
-ls = pd.DataFrame({"title": [],"content": [], "number": [], "label": []})
+    modeltest = predict["label"].copy()
+    standard = dev["label"].copy()
+    list_error = []
+    for i in range(len(modeltest)):
+        if modeltest[i] != standard[i]:
+            list_error.append(i + 1)
+    print(list_error)
+    print(len(list_error))
+    micro = metrics.f1_score(standard, modeltest, average="micro")
+    macro = metrics.f1_score(standard,modeltest , average="macro")
+    accuracy = metrics.accuracy_score(standard, modeltest)
+    matrix=metrics.confusion_matrix(standard, modeltest)
+    report=metrics.classification_report(standard, modeltest, target_names=['股称','股价','市值','涨跌','成交','增值'], digits=3)
+    print("all",n)
+    print("micro",micro)
+    print("macro",macro)
+    print("accuracy",accuracy)
+    print(matrix)
+    print(report)
 
-for i in range(0,n):
-    if t1[i]!=t2[i]:
-        s = pd.Series({'content':df1['content'][i], 'number':df1['number'][i], 'label':t2[i]})
-        ls=ls.append(s,ignore_index=True)
-        
-
-print (len(ls)) 
-
-ls.to_csv('/Users/vin/Desktop/compare1.csv')
-
-# 识别数字后的数据
 
 
 
+data_compare()

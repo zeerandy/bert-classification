@@ -3,10 +3,11 @@
 import pandas as pd
 import numpy as np
 import json
+import pandas as pd
+from sklearn import metrics
 
-
-url='/Users/vin/Desktop/test_results.tsv'
-test='/Users/vin/Desktop/test.tsv'
+url='./output/predict.csv'
+test='./data/test.tsv'
 
 df = pd.read_csv(url, encoding='utf-8',sep='\t')
 df2 = pd.read_csv(test, encoding='utf-8',sep='\t', dtype={
@@ -32,6 +33,23 @@ for i in range(0,n):
         s = pd.Series({'content':df2['content'][i], 'test':t1[i], 'label':t2[i]})
         ls=ls.append(s,ignore_index=True)
 
-ls.to_csv('/Users/vin/Desktop/testcompare.tsv',sep='\t',index=None)
+modeltest = ls['label'].copy()
+standard = t2.copy()
+list_error = []
+for i in range(len(modeltest)):
+    if modeltest[i] != standard[i]:
+        list_error.append(i + 1)
+print(list_error)
+print(len(list_error))
+micro = metrics.f1_score(standard, modeltest, average="micro")
+macro = metrics.f1_score(standard, modeltest, average="macro")
+accuracy = metrics.accuracy_score(standard, modeltest)
+matrix = metrics.confusion_matrix(standard, modeltest)
+report = metrics.classification_report(standard, modeltest, target_names=['股称', '股价', '市值', '涨跌', '成交', '增值'], digits=3)
+print("all", n)
+print("micro", micro)
+print("macro", macro)
+print("accuracy", accuracy)
+print(matrix)
+print(report)
 
-print (len(ls),n) 
