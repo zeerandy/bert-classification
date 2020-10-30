@@ -6,7 +6,7 @@ import json
 import pandas as pd
 from sklearn import metrics
 
-url='./output/predict.csv'
+url='./output/results/test_results.tsv'
 test='./data/test.tsv'
 
 df = pd.read_csv(url, encoding='utf-8',sep='\t')
