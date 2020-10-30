@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fde1373-4676-495a-98e0-fcbad01beec4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/BertTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/BertTest.py" afterDir="false" />
-    </list>
+    <list default="true" id="1fde1373-4676-495a-98e0-fcbad01beec4" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,12 +168,12 @@
       <workItem from="1603782135407" duration="1522000" />
       <workItem from="1603784990785" duration="689000" />
       <workItem from="1603970344399" duration="1219000" />
-      <workItem from="1604026284593" duration="1185000" />
+      <workItem from="1604026284593" duration="1787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4615000" />
+    <option name="totallyTimeSpent" value="5217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
