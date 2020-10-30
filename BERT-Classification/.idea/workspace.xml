@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fde1373-4676-495a-98e0-fcbad01beec4" name="Default" comment="" />
+    <list default="true" id="1fde1373-4676-495a-98e0-fcbad01beec4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/run_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_classifier.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="836" column="63" selection-start-line="836" selection-start-column="63" selection-end-line="836" selection-end-column="74" />
+            <state relative-caret-position="447">
+              <caret line="250" column="32" lean-forward="true" selection-start-line="250" selection-start-column="32" selection-end-line="250" selection-end-column="32" />
               <folding>
                 <element signature="e#1176#1270#0" />
                 <element signature="e#1328#1441#0" />
@@ -31,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BertTest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
@@ -61,6 +63,7 @@
     <findStrings>
       <find>predict</find>
       <find>output</find>
+      <find>_create_examples</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -69,9 +72,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/run_classifier.py" />
         <option value="$PROJECT_DIR$/Compare.py" />
         <option value="$PROJECT_DIR$/BertTest.py" />
+        <option value="$PROJECT_DIR$/run_classifier.py" />
       </list>
     </option>
   </component>
@@ -168,12 +171,12 @@
       <workItem from="1603782135407" duration="1522000" />
       <workItem from="1603784990785" duration="689000" />
       <workItem from="1603970344399" duration="1219000" />
-      <workItem from="1604026284593" duration="1787000" />
+      <workItem from="1604026284593" duration="1803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5217000" />
+    <option name="totallyTimeSpent" value="5233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -230,25 +233,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="836" column="63" selection-start-line="836" selection-start-column="63" selection-end-line="836" selection-end-column="74" />
-          <folding>
-            <element signature="e#1176#1270#0" />
-            <element signature="e#1328#1441#0" />
-            <element signature="e#5146#5400#0" />
-            <element signature="e#5436#6620#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BertTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
             <element signature="e#13#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="250" column="32" lean-forward="true" selection-start-line="250" selection-start-column="32" selection-end-line="250" selection-end-column="32" />
+          <folding>
+            <element signature="e#1176#1270#0" />
+            <element signature="e#1328#1441#0" />
+            <element signature="e#5146#5400#0" />
+            <element signature="e#5436#6620#0" />
           </folding>
         </state>
       </provider>

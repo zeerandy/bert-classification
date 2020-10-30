@@ -251,7 +251,7 @@ class FinattProcessor(DataProcessor):
             labels.append(label)
             labels_test.append(label)
             examples.append(
-                InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
+                InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
 
         return examples, labels
 
